@@ -19,3 +19,8 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+ 	
+Route::get('api/v1/ejercicios/{id}','RutinaController@getRoutinesExcercises');
+Route::get('api/v1/rutina/{id}','RutinaController@getRoutineGenerals');
+
